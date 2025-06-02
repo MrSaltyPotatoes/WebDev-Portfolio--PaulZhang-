@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Paul Zhang - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">PZ</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="design_thinking.html">Design Thinking</a>
+            <a href="global_goals.html">UN Global Goals</a>
+            <a href="accessibility.html">Accessibility</a>
+        </div>
+    </nav>
+
+    <h1 class="section-title main-title">My Interests & Activities</h1>
+
+    <section class="image-gallery">
+        <h2 class="visually-hidden">Photo Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="Images/Swimming.png" alt="A photo of me in a swimming competition" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="Images/Chess.png" alt="Playing chess at a school tournament, showing strategic thinking" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="Images/Coding.png" alt="Working on a coding project at my computer, displaying programming skills" class="gallery-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="hobby-section">
+ 
+        <div class="hobby-container">
+            <div class="hobby-text right">
+                <h2>Swimming</h2>
+                <p>I am passionate about swimming and am a proud member of the school swim team. Through swimming, I've learned perseverance and self-improvement.</p>
+            </div>
+            <div class="hobby-image-space">
+                <img src="Images/Swimming.png" alt="Me swimming in a competition, demonstrating my passion for the sport" class="hobby-image">
+            </div>
+        </div>
+
+        <div class="hobby-container reverse">
+            <div class="hobby-text left">
+                <h2>Chess</h2>
+                <p>I enjoy playing chess and am an active member of the school chess club. This sport has helped develop my strategic thinking abilities.</p>
+            </div>
+            <div class="hobby-image-space">
+                <img src="Images/Chess.png" alt="Playing chess at a school tournament, showing strategic thinking" class="hobby-image">
+            </div>
+        </div>
+
+        <div class="hobby-container">
+            <div class="hobby-text right">
+                <h2>Coding</h2>
+                <p>I'm enthusiastic about coding and currently taking Computer Science 12. I aspire to become a proficient programmer in the future.</p>
+            </div>
+            <div class="hobby-image-space">
+                <img src="Images/Coding.png" alt="Working on a coding project at my computer, displaying programming skills" class="hobby-image">
+            </div>
+        </div>
+    </section>
+
+    <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
+
+    <script src="scroll.js"></script>
+</body>
+</html> 
