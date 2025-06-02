@@ -1,0 +1,673 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: white;
+    padding: 20px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index:100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.nav-links a.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Main Page section styles */
+.main_page {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.main_page-content {
+    max-width: 800px;
+}
+
+.main_page h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.intro {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    text-align: center;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item p {
+    margin-top: 15px;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5rem;
+}
+
+/* More About Me Section */
+.more-about-me {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.show-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.show-more-btn:hover {
+    background-color: #0056b3;
+}
+
+#additionalInfo {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.additional-info {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.additional-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+/* Hobby Section Styles */
+.hobby-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 50px;
+}
+
+.hobby-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.hobby-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.hobby-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hobby-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.hobby-image-space {
+    flex: 1;
+    height: 300px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.hobby-image-space img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.hobby-image-space img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hobby-container, 
+    .hobby-container.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hobby-text, 
+    .hobby-image-space {
+        width: 100%;
+    }
+
+    .hobby-image-space {
+        order: -1;
+    }
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    padding: 20px 20px 40px;
+    background-color: #f8f9fa;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    flex: 1;
+    max-width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.1);
+}
+
+/* Main Title Styles */
+.main-title {
+    margin: 40px auto 20px;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Design Thinking Main Page Section */
+.design-thinking-main_page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.main_page-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Design Thinking Process Section */
+.design-thinking-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.process-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    gap: 50px;
+}
+
+.process-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.process-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.process-text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.process-text h3:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.process-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.process-image-space {
+    flex: 1;
+    min-height: 300px;
+}
+
+.process-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.initial-look {
+    height: 275px;
+}
+
+.questionnaire {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.reference {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.reference-link {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reference-link:hover {
+    color: #007bff;
+}
+
+.reference-link:visited {
+    color: #8b0000;
+}
+
+/* Responsive Design for Design Thinking Page */
+@media (max-width: 768px) {
+    .process-container,
+    .process-container.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .process-text h3:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .process-image-space {
+        width: 100%;
+        order: -1;
+    }
+}
+
+.process-emoji {
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 300px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Global Goals Section */
+.goals-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.goal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    gap: 50px;
+}
+
+.goal-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.goal-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.goal-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.goal-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.goal-text strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.goal-image-space {
+    flex: 1;
+}
+
+.goal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .goal-container,
+    .goal-container.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .goal-text, 
+    .goal-image-space {
+        width: 100%;
+    }
+}
+
+/* Accessibility Section Styles */
+.accessibility-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.accessibility-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 50px;
+}
+
+.accessibility-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.accessibility-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.accessibility-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+}
+
+.accessibility-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.accessibility-image-space {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accessibility-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .accessibility-container,
+    .accessibility-container.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .accessibility-text, 
+    .accessibility-image-space {
+        width: 100%;
+    }
+}
+
+/* Accessibility Helper Classes */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Title Examples Styles */
+.title-examples {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.title-example {
+    margin: 15px 0;
+    padding: 10px;
+    border-left: 3px solid #007bff;
+}
+
+.example-h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+    font-weight: 700;
+}
+
+.example-h2 {
+    font-size: 2rem;
+    color: #444;
+    margin: 0;
+    font-weight: 600;
+}
+
+.example-h3 {
+    font-size: 1.75rem;
+    color: #555;
+    margin: 0;
+    font-weight: 500;
+}
+
+.example-h4 {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+}
+
+.title-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0 0 0;
+    font-style: italic;
+}
+
+/* Scroll to Top Button */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.3s;
+}
+
+#topBtn:hover {
+    opacity: 0.8;
+} 
