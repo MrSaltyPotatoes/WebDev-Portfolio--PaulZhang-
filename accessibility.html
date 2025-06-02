@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Paul Zhang - Accessibility Statement</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">PZ</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="design_thinking.html">Design Thinking</a>
+            <a href="global_goals.html">UN Global Goals</a>
+            <a href="accessibility.html" class="active">Accessibility</a>
+        </div>
+    </nav>
+
+    <h1 class="section-title main-title">Accessibility Statement</h1>
+
+    <section class="accessibility-section">
+        <div class="accessibility-container">
+            <div class="accessibility-text right">
+                <h2>Clear Website Structure</h2>
+                <p>The website structure is clear and uses appropriate heading tags (such as h1, h2, etc.). For example, the main title of the home page uses the &lt;h1&gt; tag, and the subheadings use &lt;h2&gt;, &lt;h3&gt;, etc. in sequence to ensure that the heading hierarchy is clear and logical.</p>
+                <p>This structure not only helps visual users quickly browse content but also enables users who use screen readers to navigate page content by headings.</p>
+            </div>
+            <div class="accessibility-image-space">
+                <img src="Images/title.jpg" alt="Visual representation of website's heading hierarchy showing the structure from h1 to h4" class="accessibility-image">
+            </div>
+        </div>
+
+        <div class="accessibility-container reverse">
+            <div class="accessibility-text left">
+                <h2>Clear Labels for Navigation</h2>
+                <p>We ensure that all links and buttons have descriptive labels that clearly indicate their purpose. For example, a button for "Learn more about me" uses "Learn more about me" as the button label instead of the vague description like "Click here."</p>
+            </div>
+            <div class="accessibility-image-space">
+                <img src="Images/button.jpg" alt="Example of descriptive button labels showing good and bad practices" class="accessibility-image">
+            </div>
+        </div>
+
+        <div class="accessibility-container">
+            <div class="accessibility-text right">
+                <h2>Alternative Text for Images</h2>
+                <p>All images have appropriate alt text to describe their content. For example, a photo of me take part in a swimming competition uses alt="A photo of me in a swimming competition." This ensures that users who use screen reader can access image information effectively.</p>
+            </div>
+            <div class="accessibility-image-space">
+                <img src="Images/Alt_Text.jpg" alt="Example of proper alt text implementation for images" class="accessibility-image">
+            </div>
+        </div>
+
+        <div class="accessibility-container reverse">
+            <div class="accessibility-text left">
+                <h2>Color Contrast and Readability</h2>
+                <p>We have chosen a high-contrast color scheme (Black and White) to ensure a clear distinction between text and background. This allows even users with impaired vision to easily read the content.</p>
+            </div>
+            <div class="accessibility-image-space">
+                <img src="Images/Color_Contrast.jpg" alt="Demonstration of good color contrast between text and background" class="accessibility-image">
+            </div>
+        </div>
+
+        <div class="accessibility-container">
+            <div class="accessibility-text right">
+                <h2>Language Definition</h2>
+                <p>We have used the lang="en" language attribute in the HTML file to allow screen readers to accurately identify the language type. This helps with correct pronunciation and reading of the content, enhancing the user's auditory experience.</p>
+            </div>
+            <div class="accessibility-image-space">
+                <img src="Images/language.jpg" alt="Code snippet showing the HTML language attribute implementation for screen readers" class="accessibility-image">
+            </div>
+        </div>
+    </section>
+
+    <button onclick="scrollToTop()" id="topBtn" title="Back to Top">↑</button>
+
+    <script src="scroll.js"></script>
+</body>
+</html> 
