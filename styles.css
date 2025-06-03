@@ -188,9 +188,23 @@ h1 {
     margin-bottom: 20px;
 }
 
+.section-title.text-left {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
 .subtitle {
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: #333;
+    text-align: left;
 }
 
 .hobby-container {
@@ -743,11 +757,24 @@ h1 {
     height: 400px;
 }
 
-.subtitle.text-left {
-    text-align: left;
-    margin-left: 30px;
-    margin-top: 30px;
+.code-subtitle {
+    font-size: 20px;
     margin-bottom: 20px;
-    font-size: 24px;
+    margin-left: 30px;
     color: #333;
+    text-align: left;
+}
+
+/* Reflection Section Styles */
+.reflection-container {
+    padding: 20px 30px;
+    margin-bottom: 40px;
+}
+
+.reflection-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: justify;
 } 
