@@ -1,9 +1,11 @@
+/*set the basic margin and padding*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*set the font family, line height, font color and background color*/ 
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -11,35 +13,34 @@ body {
     background-color: #fff;
 }
 
+/*set the navbar background color, padding, box shadow, position, top and z-index*/
 .navbar {
     background-color: white;
     padding: 20px 5%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
-    top: 0;
+    top: 0; 
     z-index:100;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/*set the logo font size, font weight, color, text decoration*/
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: #000;
     text-decoration: none;
-    transition: opacity 0.3s;
 }
 
-.logo:hover {
-    opacity: 0.8;
-}
-
+/*set the navigation links display, gap and font weight*/
 .nav-links {
     display: flex;
     gap: 2rem;
 }
 
+/*set the navigation links color, text decoration, font weight, padding and border radius*/
 .nav-links a {
     color: #333;
     text-decoration: none;
@@ -48,17 +49,19 @@ body {
     border-radius: 4px;
 }
 
+/*set the navigation links hover background color, color*/
 .nav-links a:hover {
     background-color: #f5f5f5;
     color: #000;
 }
 
+/*set the navigation links active background color, color*/ 
 .nav-links a.active {
     background-color: #000;
     color: #fff;
 }
 
-/* Main Page section styles */
+/*set the main page min height, display, align items, padding*/
 .main_page {
     min-height: 90vh;
     display: flex;
@@ -66,10 +69,12 @@ body {
     padding: 0 5%;
 }
 
+/*set the main page content max width*/
 .main_page-content {
     max-width: 800px;
 }
 
+/*set the main page title font size, font weight, margin bottom, line height*/
 .main_page h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -77,12 +82,14 @@ body {
     line-height: 1.2;
 }
 
+/*set the main page intro font size, color, max width*/
 .intro {
     font-size: 1.2rem;
     color: #666;
     max-width: 600px;
 }
 
+/*set the portfolio container display, justify content, gap, flex wrap, padding, max width, margin*/
 .portfolio-container {
     display: flex;
     justify-content: center;
@@ -93,12 +100,14 @@ body {
     margin: 0 auto;
 }
 
+/*set the portfolio item text alignment, width, margin bottom*/
 .portfolio-item {
     text-align: center;
     width: 300px;
     margin-bottom: 30px;
 }
 
+/*set the portfolio item image width, height, object fit, border radius, transition, box shadow*/
 .portfolio-item img {
     width: 100%;
     height: 300px;
@@ -108,10 +117,12 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/*set the portfolio item image hover transform*/
 .portfolio-item img:hover {
     transform: scale(1.05);
 }
 
+/*set the portfolio item paragraph margin top, color, font size, line height, padding*/ 
 .portfolio-item p {
     margin-top: 15px;
     color: #333;
@@ -120,13 +131,14 @@ body {
     padding: 0 10px;
 }
 
+/*set the more about me section text alignment, padding, margin, font size*/
 h1 {
     text-align: center;
     margin: 40px 0;
     font-size: 2.5rem;
 }
 
-/* More About Me Section */
+/*set the more about me section text alignment, padding, margin, max width*/
 .more-about-me {
     text-align: center;
     padding: 20px;
@@ -134,6 +146,7 @@ h1 {
     max-width: 800px;
 }
 
+/*set the show more button background color, color, border, padding, border radius, font size, cursor*/
 .show-more-btn {
     background-color: #007bff;
     color: white;
@@ -144,10 +157,12 @@ h1 {
     cursor: pointer;
 }
 
+
 .show-more-btn:hover {
     background-color: #0056b3;
 }
 
+/*set the additional info margin top, padding, background color, border radius*/
 #additionalInfo {
     margin-top: 20px;
     padding: 15px;
@@ -155,6 +170,7 @@ h1 {
     border-radius: 5px;
 }
 
+/*set the additional info margin top, padding, background color, border radius, transition*/
 .additional-info {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -163,6 +179,7 @@ h1 {
     transition: all 0.3s ease;
 }
 
+/*set the additional info paragraph font size, line height, color, margin*/
 .additional-info p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -170,12 +187,13 @@ h1 {
     margin: 0;
 }
 
+/*set the hidden display, opacity*/
 .hidden {
     display: none;
     opacity: 0;
 }
 
-/* Hobby Section Styles */
+/*set the hobby section padding, max width, margin, margin top*/
 .hobby-section {
     padding: 50px 20px;
     max-width: 1200px;
@@ -183,22 +201,26 @@ h1 {
     margin-top: 40px;
 }
 
+/*set the section title font size, margin bottom*/
 .section-title {
     font-size: 32px;
     margin-bottom: 20px;
 }
 
+/*set the section title text left font size, margin bottom, margin left*/
 .section-title.text-left {
     font-size: 32px;
     margin-bottom: 20px;
     margin-left: 30px;
 }
 
+/*set the subtitle font size, margin bottom*/
 .subtitle {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
+/*set the section subtitle font size, margin bottom, margin left, color, text align*/
 .section-subtitle {
     font-size: 24px;
     margin-bottom: 20px;
@@ -207,6 +229,7 @@ h1 {
     text-align: left;
 }
 
+/*set the hobby container display, justify content, align items, margin bottom, gap*/
 .hobby-container {
     display: flex;
     justify-content: space-between;
@@ -215,32 +238,38 @@ h1 {
     gap: 50px;
 }
 
+/*set the hobby container reverse display, flex direction*/
 .hobby-container.reverse {
     flex-direction: row-reverse;
 }
 
+/*set the hobby text flex, padding*/
 .hobby-text {
     flex: 1;
     padding: 20px;
 }
 
+/*set the hobby text h3 font size, margin bottom, color*/
 .hobby-text h3 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
 }
 
+/*set the hobby text p font size, line height, color*/
 .hobby-text p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #666;
 }
 
+/*set the hobby image space flex, height*/
 .hobby-image-space {
     flex: 1;
     height: 300px;
 }
 
+/*set the image placeholder width, height, background color, border radius, display, align items, justify content, color, font size*/
 .image-placeholder {
     width: 100%;
     height: 100%;
@@ -253,6 +282,7 @@ h1 {
     font-size: 1.2rem;
 }
 
+/*set the hobby image space img width, height, object fit, border radius, box shadow, transition*/
 .hobby-image-space img {
     width: 100%;
     height: 100%;
@@ -262,26 +292,9 @@ h1 {
     transition: transform 0.3s ease;
 }
 
+/*set the hobby image space img hover transform*/
 .hobby-image-space img:hover {
     transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hobby-container, 
-    .hobby-container.reverse {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hobby-text, 
-    .hobby-image-space {
-        width: 100%;
-    }
-
-    .hobby-image-space {
-        order: -1;
-    }
 }
 
 /* Image Gallery Styles */
@@ -290,6 +303,7 @@ h1 {
     background-color: #f8f9fa;
 }
 
+/*set the gallery container max width, margin, display, justify content, gap, padding*/
 .gallery-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -299,6 +313,7 @@ h1 {
     padding: 20px 0;
 }
 
+/*set the gallery item flex, max width, height, overflow, border radius, box shadow*/
 .gallery-item {
     flex: 1;
     max-width: 350px;
@@ -308,6 +323,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/*set the gallery image width, height, object fit, transition*/
 .gallery-image {
     width: 100%;
     height: 100%;
@@ -315,18 +331,19 @@ h1 {
     transition: transform 0.3s ease;
 }
 
+/*set the gallery image hover transform*/
 .gallery-image:hover {
     transform: scale(1.1);
 }
 
-/* Main Title Styles */
+/*set the main title margin, max width, padding*/
 .main-title {
     margin: 40px auto 20px;
     max-width: 1200px;
     padding: 0 20px;
 }
 
-/* Design Thinking Main Page Section */
+/*set the design thinking main page width, max width, margin, padding, text align*/
 .design-thinking-main_page {
     width: 100%;
     max-width: 1000px;
@@ -335,6 +352,7 @@ h1 {
     text-align: center;
 }
 
+/*set the main page image width, max width, height, border radius, box shadow*/
 .main_page-image {
     width: 100%;
     max-width: 800px;
@@ -343,28 +361,32 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Design Thinking Process Section */
+/*set the design thinking section max width, margin, padding*/
 .design-thinking-section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/*set the process container display, padding, margin bottom*/
 .process-container {
     display: flex;
     padding: 20px;
     margin-bottom: 40px;
 }
 
+/*set the process container reverse display, flex direction*/
 .process-container.reverse {
     flex-direction: row-reverse;
 }
 
+/*set the process text width, padding*/
 .process-text {
     width: 50%;
     padding-right: 20px;
 }
 
+/*set the process text h3 font size, margin bottom, color, position, display*/
 .process-text h3 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -373,6 +395,7 @@ h1 {
     display: inline-block;
 }
 
+/*set the process text h3 after content, position, bottom, left, width, height, background color*/
 .process-text h3:after {
     content: '';
     position: absolute;
@@ -383,6 +406,7 @@ h1 {
     background-color: #007bff;
 }
 
+/*set the process text p font size, line height, color, margin bottom*/
 .process-text p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -390,10 +414,12 @@ h1 {
     margin-bottom: 20px;
 }
 
+/*set the process image space width*/
 .process-image-space {
     width: 50%;
 }
 
+/*set the process image width, margin, display, block, border radius*/
 .process-image {
     width: 90%;
     margin: 0 auto;
@@ -401,34 +427,41 @@ h1 {
     border-radius: 10px;
 }
 
+/*set the initial look height*/
 .initial-look {
     height: 275px;
 }
 
+/*set the questionnaire width, margin*/
 .questionnaire {
     width: 70%;
     margin: 0 auto;
 }
 
+/*set the reference margin top, font style*/
 .reference {
     margin-top: 20px;
     font-style: italic;
 }
 
+/*set the reference link color, text decoration, transition*/
 .reference-link {
     color: #666;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+/*set the reference link hover color*/
 .reference-link:hover {
     color: #007bff;
 }
 
+/*set the reference link visited color*/
 .reference-link:visited {
     color: #8b0000;
 }
 
+/*set the process emoji font size, display, justify content, align items, height, min height, background color, border radius, box shadow, margin right*/
 .process-emoji {
     font-size: 8rem;
     display: flex;
@@ -442,13 +475,14 @@ h1 {
     margin-right: 100px;
 }
 
-/* Global Goals Section */
+/*set the goals section max width, margin, padding*/
 .goals-section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/*set the goal container display, justify content, align items, margin bottom, gap*/
 .goal-container {
     display: flex;
     justify-content: space-between;
@@ -457,55 +491,48 @@ h1 {
     gap: 50px;
 }
 
+/*set the goal container reverse display, flex direction*/
 .goal-container.reverse {
     flex-direction: row-reverse;
 }
 
+/*set the goal text flex, padding*/
 .goal-text {
     flex: 1;
     padding: 20px;
 }
 
+/*set the goal text h3 font size, margin bottom, color*/
 .goal-text h3 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
 }
 
+/*set the goal text p font size, line height, color*/
 .goal-text p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #666;
 }
 
+/*set the goal text strong color, font weight*/
 .goal-text strong {
     color: #333;
     font-weight: 600;
 }
 
+/*set the goal image space flex*/
 .goal-image-space {
     flex: 1;
 }
 
+/*set the goal image width, height, object fit, border radius, box shadow*/
 .goal-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .goal-container,
-    .goal-container.reverse {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .goal-text, 
-    .goal-image-space {
-        width: 100%;
-    }
 }
 
 /* Accessibility Section Styles */
@@ -515,6 +542,7 @@ h1 {
     padding: 20px;
 }
 
+/*set the accessibility container display, justify content, align items, margin bottom, gap*/
 .accessibility-container {
     display: flex;
     justify-content: space-between;
@@ -523,15 +551,18 @@ h1 {
     gap: 50px;
 }
 
+/*set the accessibility container reverse display, flex direction*/
 .accessibility-container.reverse {
     flex-direction: row-reverse;
 }
 
+/*set the accessibility text flex, padding*/
 .accessibility-text {
     flex: 1;
     padding: 20px;
 }
 
+/*set the accessibility text h2 font size, margin bottom, color, position*/
 .accessibility-text h2 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -539,6 +570,7 @@ h1 {
     position: relative;
 }
 
+/*set the accessibility text p font size, line height, color, margin bottom*/
 .accessibility-text p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -546,6 +578,7 @@ h1 {
     margin-bottom: 15px;
 }
 
+/*set the accessibility image space flex, display, align items, justify content*/
 .accessibility-image-space {
     flex: 1;
     display: flex;
@@ -553,6 +586,7 @@ h1 {
     justify-content: center;
 }
 
+/*set the accessibility image width, height, object fit, border radius, box shadow*/
 .accessibility-image {
     width: 100%;
     height: auto;
@@ -560,7 +594,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Accessibility Helper Classes */
+/*set the visually hidden position, width, height, padding, margin, overflow, clip, white space, border*/
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -573,7 +607,7 @@ h1 {
     border: 0;
 }
 
-/* Title Examples Styles */
+/*set the title examples background color, padding, border radius, margin*/
 .title-examples {
     background-color: #f8f9fa;
     padding: 20px;
@@ -581,12 +615,14 @@ h1 {
     margin: 20px 0;
 }
 
+/*set the title example margin, padding, border left*/
 .title-example {
     margin: 15px 0;
     padding: 10px;
     border-left: 3px solid #007bff;
 }
 
+/*set the example h1 font size, color, margin, font weight*/
 .example-h1 {
     font-size: 2.5rem;
     color: #333;
@@ -594,6 +630,7 @@ h1 {
     font-weight: 700;
 }
 
+/*set the example h2 font size, color, margin, font weight*/
 .example-h2 {
     font-size: 2rem;
     color: #444;
@@ -601,6 +638,7 @@ h1 {
     font-weight: 600;
 }
 
+/*set the example h3 font size, color, margin, font weight*/
 .example-h3 {
     font-size: 1.75rem;
     color: #555;
@@ -608,6 +646,7 @@ h1 {
     font-weight: 500;
 }
 
+/*set the example h4 font size, color, margin, font weight*/
 .example-h4 {
     font-size: 1.5rem;
     color: #666;
@@ -615,6 +654,7 @@ h1 {
     font-weight: 500;
 }
 
+/*set the title description font size, color, margin, font style*/
 .title-description {
     font-size: 0.9rem;
     color: #666;
@@ -622,7 +662,7 @@ h1 {
     font-style: italic;
 }
 
-/* Scroll to Top Button */
+/*set the top button position, bottom, right, z-index, border, outline, background color, color, cursor, padding*/
 #topBtn {
     position: fixed;
     bottom: 20px;
@@ -641,16 +681,14 @@ h1 {
     transition: opacity 0.3s;
 }
 
-#topBtn:hover {
-    opacity: 0.8;
-}
-
+/*set the behind curtain padding, max width, margin*/
 .behind-curtain {
     padding: 50px 20px;
     max-width: 800px;
     margin: 0 auto;
 }
 
+/*set the behind curtain subtitle text align, font size, margin, color*/
 .behind-curtain .subtitle {
     text-align: center;
     font-size: 1.8rem;
@@ -658,32 +696,38 @@ h1 {
     color: #444;
 }
 
+/*set the behind curtain p font size, line height, margin bottom*/
 .behind-curtain p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
+/*set the behind curtain ul margin, padding left*/
 .behind-curtain ul {
     margin: 20px 0;
     padding-left: 40px;
 }
 
+/*set the behind curtain li font size, line height, margin bottom*/
 .behind-curtain li {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
+/*set the behind curtain a color, text decoration*/
 .behind-curtain a {
     color: #007bff;
     text-decoration: none;
 }
 
+/*set the behind curtain a hover text decoration*/
 .behind-curtain a:hover {
     text-decoration: underline;
 }
 
+/*set the challenge image width, max width, height, margin, display, block, border radius, box shadow*/
 .challenge-image {
     width: 100%;
     max-width: 600px;
@@ -694,27 +738,31 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/*set the text left text align, margin left*/
 .text-left {
     text-align: left;
     margin-left: 30px;
 }
 
+/*set the text left after content display none*/
 .text-left:after {
     display: none;
 }
 
+/*set the process image space img width, margin, display, block*/
 .process-image-space img {
     width: 80%;
     margin: 0 auto;
     display: block;
 }
 
-/* 统一列表样式 */
+/*set the process text ul margin, padding left*/
 .process-text ul {
     margin: 15px 0;
     padding-left: 25px;
 }
 
+/*set the process text li font size, line height, margin bottom, color*/
 .process-text li {
     font-size: 16px;
     line-height: 1.6;
@@ -722,11 +770,12 @@ h1 {
     color: #666;
 }
 
-/* Code Screenshot Section Styles */
+/*set the code screenshot section margin bottom*/
 .image-row {
     margin-bottom: 40px;
 }
 
+/*set the code images display, flex wrap, gap, margin, justify content, align items*/
 .code-images {
     display: flex;
     flex-wrap: wrap;
@@ -736,6 +785,7 @@ h1 {
     align-items: stretch;
 }
 
+/*set the code image max width, height, object fit, border radius, box shadow, background color, padding*/
 .code-image {
     max-width: 250px;
     height: 200px;
@@ -744,19 +794,35 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     background-color: #f8f9fa;
     padding: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Specific sizes for different sections */
+.code-image:hover {
+    transform: scale(1.05);
+}
+
+/*set the screenshot images max width, height*/
 .screenshot-images .code-image {
     max-width: 300px;
     height: 500px;
 }
 
+/*set the html images max width, height*/
 .html-images .code-image {
-    max-width: 400px;
-    height: 400px;
+    max-width: 350px;
+    height: 500px;
 }
 
+/*set the javascript images max width, height*/
+.code-images:last-child .code-image {
+    max-width: 350px;
+    height: 500px;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+/*set the code subtitle font size, margin bottom, margin left, color, text align*/
 .code-subtitle {
     font-size: 20px;
     margin-bottom: 20px;
@@ -765,12 +831,13 @@ h1 {
     text-align: left;
 }
 
-/* Reflection Section Styles */
+/*set the reflection container padding, margin bottom*/
 .reflection-container {
     padding: 20px 30px;
     margin-bottom: 40px;
 }
 
+/*set the reflection container p font size, line height, color, margin bottom, text align*/
 .reflection-container p {
     font-size: 1.1rem;
     line-height: 1.8;
