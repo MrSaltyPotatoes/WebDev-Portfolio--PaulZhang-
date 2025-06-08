@@ -67,11 +67,14 @@ body {
     display: flex;
     align-items: center;
     padding: 0 5%;
+    gap: 2rem;
+    justify-content: center;
 }
 
 /*set the main page content max width*/
 .main_page-content {
     max-width: 800px;
+    flex: 1;
 }
 
 /*set the main page title font size, font weight, margin bottom, line height*/
@@ -80,6 +83,7 @@ body {
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    text-align: left;
 }
 
 /*set the main page intro font size, color, max width*/
@@ -87,6 +91,7 @@ body {
     font-size: 1.2rem;
     color: #666;
     max-width: 600px;
+    text-align: left;
 }
 
 /*set the portfolio container display, justify content, gap, flex wrap, padding, max width, margin*/
@@ -354,11 +359,11 @@ h1 {
 
 /*set the main page image width, max width, height, border radius, box shadow*/
 .main_page-image {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
 }
 
 /*set the design thinking section max width, margin, padding*/
@@ -844,4 +849,11 @@ h1 {
     color: #444;
     margin-bottom: 20px;
     text-align: justify;
-} 
+}
+
+.selfie {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
